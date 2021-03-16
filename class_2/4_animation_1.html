@@ -13,6 +13,57 @@
 				color:#fff;
 				padding:20px;
 			}
+			/* transition */
+			/* .section .box{
+				height:50px;
+				width:50px;
+				background:red;
+				margin:0 auto;
+				transition:all 0.5s;
+			}
+			.section .box:hover{
+				width:100px;
+				height:100px;
+				background:blue;
+			} */
+
+			/* animation */
+			/* .section .box{
+				height:50px;
+				width:50px;
+				background:red;
+				margin:0 auto;
+				animation:key_name 3s infinite;
+			}
+			@keyframes key_name{
+				0%{height:50px; width:50px; margin-top:0;}
+				50%{height:100px; width:50px; margin-top:100px;}
+				100%{height:100px; width:100px; margin-top:0px;}
+			} */
+
+			/* transform */
+			.section .box{
+				height:50px;
+				width:50px;
+				background:red;
+				margin:0 auto;
+				/* transform:scale(2) */
+				/* transform: translate(30px,-70px); */
+				/* transform:rotate(50deg) */
+			}
+
+			/* 응용 */
+			.section .box{
+				height:50px;
+				width:50px;
+				background:red;
+				margin:0 auto;
+				transition:transform .5s
+			}
+			.section .box:hover{
+				transform:rotate(180deg);
+			}
+
 		</style>
 
   </head>
@@ -27,7 +78,7 @@
     </div>
 		<div class="container">
 				<div class="section">
-					
+					<div class="box"></div>
 				</div>
 				
 		</div>

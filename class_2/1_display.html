@@ -1,35 +1,151 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>html</title>
-		<style>
-			body, h1{margin:0}
-			a{color:#fff}
 
-			.header{
-				background:#333;
-				color:#fff;
-				padding:20px;
-			}
-		</style>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>html</title>
+	<style>
+		body,
+		h1 {
+			margin: 0
+		}
 
-  </head>
-  <body>
-    <div class="header">
-			<h1>logo</h1>
-			<div class="nav">
-				<a href="#">menu1</a>
-				<a href="#">menu2</a>
-				<a href="#">menu3</a>
-			</div>
-    </div>
-		<div class="container">
-				<div class="aside"></div>
-				<div class="section">
-					a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>a<br>
-				</div>
+		a {
+			color: #fff
+		}
+
+		.header {
+			background: #333;
+			color: #fff;
+			padding: 20px;
+		}
+
+		.section {
+
+			background: #999;
+			text-align: center;
+		}
+
+		.section>span {
+			height: 50px;
+			width: 50px;
+			background: red;
+			display: block;
+			/* vertical-align: bottom; */
+		}
+
+		.section>span:first-child {
+			height: 70px;
+			float: left;
+		}
+
+		.section>span:last-child {
+			float: right;
+		}
+
+		.section:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.header:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.header h1 {
+			float: left;
+		}
+
+		.header .nav {
+			float: right;
+		}
+
+		.tbl{
+			display: table;
+			width:100%;
+		}
+		.tbl-cell{
+			display: table-cell;
+			background:#333;
+			
+		}
+		.tbl-cell:last-child{
+			background:#442222;
+			width:80%;
+		}
+
+		.flex-area{
+			display: flex;
+		}
+		.flex-area .flex-cell{
+			background: #6fd8a3;
+		}
+		.flex-area .flex-cell:first-child{
+			width:200px;
+		}
+		.flex-area .flex-cell:last-child{
+			background: #8d9926;
+			flex:1;
+		}
+	</style>
+
+</head>
+
+<body>
+	<div class="header">
+		<h1>logo</h1>
+		<div class="nav">
+			<a href="#">menu1</a>
+			<a href="#">menu2</a>
+			<a href="#">menu3</a>
 		</div>
-  </body>
+	</div>
+	<div class="container">
+		<div class="aside"></div>
+		<div class="section">
+			<span></span>
+			<span></span>
+		</div>
+
+		<div class="tbl">
+			<div class="tbl-cell">
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+				b<br />
+			</div>
+			<div class="tbl-cell">
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+				a<br />
+			</div>
+		</div>
+
+		<div class="flex-area">
+			<div class="flex-cell">aaa</div>
+			<div class="flex-cell">bbb<br/>bbb</div>
+		</div>
+	</div>
+</body>
+
 </html>

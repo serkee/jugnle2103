@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width">
     <title>html</title>
 		<style>
+			html,
+			body{height:100%}
 			body, h1{margin:0}
 			
-			.wrap{width:700px; height:400px; background:#ccc}
+			.wrap{width:50%; height:50%; background:#ccc}
+			
+			.unit{background:#999; width:50%; height:50%;}
 
+			.box_input{background: #5c98cc; font-size: 0;}
+			.box_input > button{width:50px; box-sizing: border-box;}
+			.box_input > input{width:calc(100% - 50px);box-sizing: border-box;}
 			
 		</style>
 
@@ -17,8 +24,8 @@
     <div class="wrap">
 			<div class="unit">
 				<div class="box_input">
-					<input>
-					<button></button>
+					<input type="text">
+					<button>버튼</button>
 				</div>
 			</div>
 		</div>
