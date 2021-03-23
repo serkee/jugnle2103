@@ -110,3 +110,17 @@
         height:50px;
     }
 }
+
+/***** 말풍선 입력시 애니메이션 처리 *****/
+.chat_area .item{
+    transition: all 0.3s;
+    opacity:0;
+    transform: translateX(-30px);
+}
+.chat_area .item.on{
+    opacity: 1;
+    transform:translateX(0) !important;
+}
+.chat_area .item.mymsg{
+    transform: translateX(30px);
+}
